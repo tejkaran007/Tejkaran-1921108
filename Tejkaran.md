@@ -542,3 +542,136 @@
     8
     9
     10
+
+19. Write a program to find transpose of matrix
+
+    #include <stdio.h>
+    int main()
+   {
+    int a[10][10], transpose[10][10], r, c, i, j;
+    printf("Enter rows and columns of matrix: ");
+    scanf("%d %d", &r, &c);
+    
+    printf("\nEnter elements of matrix:\n");
+    for(i=0; i<r; ++i)
+        for(j=0; j<c; ++j)
+        {
+            printf("Enter element a%d%d: ",i+1, j+1);
+            scanf("%d", &a[i][j]);
+        }
+    
+    printf("\nEntered Matrix: \n");
+    for(i=0; i<r; ++i)
+        for(j=0; j<c; ++j)
+        {
+            printf("%d  ", a[i][j]);
+            if (j == c-1)
+                printf("\n\n");
+        }
+    
+    for(i=0; i<r; ++i)
+        for(j=0; j<c; ++j)
+        {
+            transpose[j][i] = a[i][j];
+        }
+    
+    printf("\nTranspose of Matrix:\n");
+    for(i=0; i<c; ++i)
+        for(j=0; j<r; ++j)
+        {
+            printf("%d  ",transpose[i][j]);
+            if(j==r-1)
+                printf("\n\n");
+        }
+    return 0;
+}
+Output
+
+     Enter rows and columns of matrix: 2
+     3
+     Enter element of matrx
+     Enter element a11: 2
+     Enter element a12: 3
+     Enter element a13: 4
+     Enter element a21: 5
+     Enter element a22: 6
+     Enter element a23: 4
+
+     Entered Matrix: 
+     2  3  4  
+
+     5  6  4  
+
+ 
+     Transpose of Matrix:
+     2  5  
+
+     3  6  
+
+     4  4  
+
+20. Write a program to find whether year is leap year or not
+
+    #include <stdio.h>
+     int main()
+   {
+    int year;
+    printf("Enter a year: ");
+    scanf("%d",&year);
+    if(year%4 == 0)
+    {
+        if( year%100 == 0)
+        {
+            // year is divisible by 400, hence the year is a leap year
+            if ( year%400 == 0)
+                printf("%d is a leap year.", year);
+            else
+                printf("%d is not a leap year.", year);
+        }
+        else
+            printf("%d is a leap year.", year );
+    }
+    else
+        printf("%d is not a leap year.", year);
+    
+    return 0;
+}
+
+Output-
+
+Enter the year - 1990
+1990 is not leap year
+Enter the year - 2012
+2012 is not leap year
+
+21. Write a program to check whether the no.is polindrome or not
+
+    #include <stdio.h>
+    int main()
+   {
+    int n, reversedInteger = 0, remainder, originalInteger;
+    printf("Enter an integer: ");
+    scanf("%d", &n);
+    originalInteger = n;
+    // reversed integer is stored in variable 
+    while( n!=0 )
+    {
+        remainder = n%10;
+        reversedInteger = reversedInteger*10 + remainder;
+        n /= 10;
+    }
+    // palindrome if orignalInteger and reversedInteger are equal
+    if (originalInteger == reversedInteger)
+        printf("%d is a palindrome.", originalInteger);
+    else
+        printf("%d is not a palindrome.", originalInteger);
+    
+    return 0;
+}
+
+Output
+
+Enter an integer: 1001
+1001 is a palindrome.
+
+22.
