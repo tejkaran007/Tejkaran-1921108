@@ -674,4 +674,110 @@ Output
 Enter an integer: 1001
 1001 is a palindrome.
 
-22.
+22. Write a program to swap two numbers using call by reference
+
+    #include <stdio.h>
+    void swap(int *n1, int *n2);
+    int main()
+  {
+    int num1 = 5, num2 = 10;
+    // address of num1 and num2 is passed
+    swap( &num1, &num2);
+    printf("num1 = %d\n", num1);
+    printf("num2 = %d", num2);
+    return 0;
+  }
+  void swap(int* n1, int* n2)
+ {
+    int temp;
+    temp = *n1;
+    *n1 = *n2;
+    *n2 = temp;
+ }
+ 
+Output-
+
+Num1 = 10
+Num2 = 5
+
+23. Write a program to find factorial of a number
+
+    #include <stdio.h>
+    int main()
+  {
+    int n, i;
+    unsigned long long factorial = 1;
+    printf("Enter an integer: ");
+    scanf("%d",&n);
+    // show error if the user enters a negative integer
+    if (n < 0)
+        printf("Error! Factorial of a negative number doesn't exist.");
+    else
+    {
+        for(i=1; i<=n; ++i)
+        {
+            factorial *= i;              // factorial = factorial*i;
+        }
+        printf("Factorial of %d = %llu", n, factorial);
+    }
+    return 0;
+}
+
+Output
+
+Enter an integer: 10
+Factorial of 10 = 3628800
+
+24. Write a program to find gcd of two numbers
+
+    #include <stdio.h>
+    int main()
+  {
+    int n1, n2;
+    
+    printf("Enter two positive integers: ");
+    scanf("%d %d",&n1,&n2);
+    while(n1!=n2)
+    {
+        if(n1 > n2)
+            n1 -= n2;
+        else
+            n2 -= n1;
+    }
+    printf("GCD = %d",n1);
+    return 0;
+}
+
+Output-
+
+Enter two positive integers 81 153
+Gcd = 9
+
+25. Write a program to print calculator using puts
+
+    #include<stdio.h>
+    int main()
+   {
+    puts("_________________");
+    puts("|_______________|");
+    puts("| 1 | 2 | 3 |   |");
+    puts("|___|___|___|   |");
+    puts("| 4 | 5 | 6 | + |");
+    puts("|___|___|___|___|");                        puts("| 7 | 8 | 9 | - |");
+    puts("|___|___|___|___|");
+    puts("|     0     | × |");
+    puts("|___________|___|");
+    return 0;
+   }
+
+Output-
+
+_________________
+|_______________|
+| 1 | 2 | 3 |   |
+|___|___|___|   |
+| 4 | 5 | 6 | + |
+|___|___|___|___|                                 | 7 | 8 | 9 | - |
+|___|___|___|___|
+|     0     | × |
+|___________|___|
