@@ -1,7 +1,7 @@
 # Name-Tej Karan Singh
 # Class-It(B2)
 # Class Roll no.-1921108
-
+# Unversity Roll no.-1905408
 ```C
 
 1. To Store the of marks scored by students
@@ -24,6 +24,7 @@
      }
 
     Output:-
+
     Enter the number of students:4
     Enter the name:Sarvansh
     Enter the marks:6
@@ -50,6 +51,7 @@
     }
 
     Output:-
+
      Enter the value of a:33
      Enter the value of b:56
      The sum of a and b is 89
@@ -71,6 +73,7 @@
     }
 
     Output:-
+
      Enter the table you want to print:89
      89 x 1=89
      89 x 2=178
@@ -143,7 +146,9 @@
             |     0     | * |\n\
             |___________|___|\n");
     }
+
     Output:-
+
      _______________
     | 1 | 2 | 3 |   |
     |___|___|___|   |
@@ -170,7 +175,9 @@
         puts("        O        O       ");
         puts("         OOOOOOOO        ");
     }
+
     Output:-
+
          OOOOOOOO     
         O ^   ^  O
        O  -   -   O
@@ -201,7 +208,9 @@
         else
            printf("Its not a prime Number");
     }
+
     Output:-
+
     Enter the number:23
     Its a Prime Number
 
@@ -244,6 +253,7 @@
     }
 
     Output:-
+
     Sample of Ist matrix: | a=1      b=2 |
                           | c=3      d=4 |
 
@@ -284,6 +294,7 @@
        }
 
     Output:-
+
     Enter the 1st Value:5
     Enter the 2nd Value:4
     Multiplication of a and b is 20.000
@@ -302,7 +313,9 @@
         printf("Area of Circle is %.3f",A);
         return 0;
     }
+
     Output:-
+
     Enter the Radius of Circle:4
     Area of Circle is 48.000
 
@@ -322,7 +335,9 @@
         printf("The average of a, b and c is %.2f",d=(a+b+c)/3);
         return 0;
     }
+
     Output:-
+
     Enter the value of a:6
     Enter the value of b:9    
     Enter the value of c:19
@@ -349,7 +364,9 @@
         }
         return 0;
     }
+
     Output:-
+
     Enter the 1st number:45.32
     Enter the 2nd number:45.48
     45.48 is greater than 45.32
@@ -380,7 +397,9 @@
         }
         return 0;
     } 
+
     Output:-
+
     Enter the 1st number:26.56
     Enter the 2nd number:26.45
     Enter the 3rd number:26.89
@@ -413,7 +432,9 @@
         }
         return 0;
     }
+
     Output:- 
+
     Enter the integer:45
     Its FizzBuzz
 
@@ -453,7 +474,9 @@
          printf("Sum of Matrix(A+B) is | %.2f     %.2f |\n                       | %.2f     %.2f |",i,j,k,l);
          return 0;
     }
+
     Output:-
+
     Sample of Ist matrix: | a=1      b=2 |
                           | c=3      d=4 |
 
@@ -494,7 +517,9 @@
         }
         return 0;
     }
+
     Output:-
+
     Enter The Integer:20
     1
     2
@@ -531,7 +556,9 @@
        }
        return 0;
     }
+
     Output:-
+
     1
     2 
     3
@@ -585,7 +612,8 @@
         }
     return 0;
 }
-Output
+
+     Output
 
      Enter rows and columns of matrix: 2
      3
@@ -637,12 +665,12 @@ Output
     return 0;
 }
 
-Output-
+    Output-
 
-Enter the year - 1990
-1990 is not leap year
-Enter the year - 2012
-2012 is not leap year
+    Enter the year - 1990
+    1990 is not leap year
+    Enter the year - 2012
+    2012 is not leap year
 
 21. Write a program to check whether the no.is polindrome or not
 
@@ -669,10 +697,9 @@ Enter the year - 2012
     return 0;
 }
 
-Output
-
-Enter an integer: 1001
-1001 is a palindrome.
+   Output
+   Enter an integer: 1001
+   1001 is a palindrome.
 
 22. Write a program to swap two numbers using call by reference
 
@@ -695,10 +722,10 @@ Enter an integer: 1001
     *n2 = temp;
  }
  
-Output-
+   Output-
 
-Num1 = 10
-Num2 = 5
+   Num1 = 10
+   Num2 = 5
 
 23. Write a program to find factorial of a number
 
@@ -723,10 +750,10 @@ Num2 = 5
     return 0;
 }
 
-Output
+    Output
 
-Enter an integer: 10
-Factorial of 10 = 3628800
+    Enter an integer: 10
+    Factorial of 10 = 3628800
 
 24. Write a program to find gcd of two numbers
 
@@ -746,38 +773,39 @@ Factorial of 10 = 3628800
     }
     printf("GCD = %d",n1);
     return 0;
-}
+  }
 
-Output-
+   Output-
 
-Enter two positive integers 81 153
-Gcd = 9
+   Enter two positive integers 81 153
+   Gcd = 9
 
-25. Write a program to print calculator using puts
+25. Write a program to swap two numbers using call by value method
 
-    #include<stdio.h>
+    #include <stdio.h>
     int main()
    {
-    puts("_________________");
-    puts("|_______________|");
-    puts("| 1 | 2 | 3 |   |");
-    puts("|___|___|___|   |");
-    puts("| 4 | 5 | 6 | + |");
-    puts("|___|___|___|___|");                        puts("| 7 | 8 | 9 | - |");
-    puts("|___|___|___|___|");
-    puts("|     0     | × |");
-    puts("|___________|___|");
-    return 0;
-   }
+      double firstNumber, secondNumber, temporaryVariable;
+      printf("Enter first number: ");
+      scanf("%lf", &firstNumber);
+      printf("Enter second number: ");
+      scanf("%lf",&secondNumber);
+      // Value of firstNumber is assigned to temporaryVariable
+      temporaryVariable = firstNumber;
+      // Value of secondNumber is assigned to firstNumber
+      firstNumber = secondNumber;
+      // Value of temporaryVariable (which contains the initial value of firstNumber) is assigned to secondNumber
+      secondNumber = temporaryVariable;
+      printf("\nAfter swapping, firstNumber = %.2lf\n", firstNumber);
+      printf("After swapping, secondNumber = %.2lf", secondNumber);
+      return 0;
+     }
+ 
+    Output
 
-Output-
+    Enter first number: 1.20
+    Enter second number: 2.45
 
-_________________
-|_______________|
-| 1 | 2 | 3 |   |
-|___|___|___|   |
-| 4 | 5 | 6 | + |
-|___|___|___|___|                                 | 7 | 8 | 9 | - |
-|___|___|___|___|
-|     0     | × |
-|___________|___|
+    After swapping, firstNumber = 2.45
+    After swapping, secondNumber = 1.20
+
