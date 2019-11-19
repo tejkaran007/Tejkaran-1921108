@@ -222,8 +222,8 @@
     {
        float a,b,c,d,e,f,g,h,i,j,k,l;
 
-       printf("\nSample of Ist matrix: | a=1      b=2 |\n                      | c=3      d=4 |\n\n\
-       Sample of 2nd matrix: | e=5      f=6 |\n                      | f=7      h=8 |\n\n");
+       printf("\nSample of Ist matrix: | a=1 b=2 |\n  | c=3 d=4 |\n\n\
+       Sample of 2nd matrix: | e=5      f=6 |\n | f=7 h=8 |\n\n");
 
        printf("Enter The Valve of a: ");
        scanf("%f",&a);
@@ -247,7 +247,7 @@
        k=(c*e)+(d*g);
        l=(c*f)+(d*h);
 
-       printf("\nMultiplication of A,B is: | %.2f     %.2f |\n                          | %.2f     %.2f |",i,j,k,l);
+       printf("\nMultiplication of A,B is: %.2f |",i,j,k,l);
 
        return 0;
     }
@@ -447,8 +447,8 @@
     {
          float a,b,c,d,e,f,g,h,i,j,k,l;
 
-         printf("\nSample of Ist matrix: | a=1      b=2 |\n                      | c=3      d=4 |\n\n\
-         Sample of 2nd matrix: | e=5      f=6 |\n                      | f=7      h=8 |\n\n");
+         printf("\nSample of Ist matrix: | a=1 b=2 |\n  | c=3  d=4 |\n\n\
+         Sample of 2nd matrix: | e=5  f=6 |\n  | f=7  h=8 |\n\n");
 
          printf("Enter The Valve of a: ");
          scanf("%f",&a);
@@ -471,7 +471,7 @@
          j = b+f;
          k = c+g;
          l = d+h;
-         printf("Sum of Matrix(A+B) is | %.2f     %.2f |\n                       | %.2f     %.2f |",i,j,k,l);
+         printf("Sum of Matrix(A+B) is %.2f |",i,j,k,l);
          return 0;
     }
 
